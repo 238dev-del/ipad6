@@ -12,6 +12,12 @@ jobs:
       - name: Show project files (debug)
         run: ls -la
 
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
       - name: Build unsigned .app
         run: |
           xcodebuild -project PenNote.xcodeproj \
