@@ -1,0 +1,20 @@
+name: PenNote
+options:
+  bundleIdPrefix: com.pennote.app
+targets:
+  PenNote:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: [.]
+    info:
+      path: Info.plist
+      properties:
+        UILaunchScreen: {}
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pennote.app
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: "1,2"
